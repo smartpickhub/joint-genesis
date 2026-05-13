@@ -3,279 +3,240 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joint Genesis™ | Move Freely Again</title>
+  <title>Joint Genesis™ | Feel Young Again</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <style>
-    .hero-bg {
-      background: linear-gradient(rgba(16, 185, 129, 0.9), rgba(0, 150, 120, 0.95)), url('https://picsum.photos/id/1015/1920/1080');
-      background-size: cover;
-      background-position: center;
-    }
-    .section-title {
-      font-size: 2.75rem;
-      line-height: 1.1;
-    }
-    .bottle-float {
-      animation: float 3s ease-in-out infinite;
-    }
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-20px); }
-    }
+    .bottle { transition: all 0.4s ease; }
+    .bottle:hover { transform: scale(1.05); }
   </style>
 </head>
-<body class="bg-zinc-50 font-sans leading-relaxed">
+<body class="bg-white font-sans">
 
   <!-- Navbar -->
-  <nav class="bg-white shadow-md fixed w-full z-50">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-      <div class="flex items-center gap-3">
-        <h1 class="text-3xl font-bold text-emerald-700">BIODYNAMIX</h1>
-      </div>
-      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-        <a href="#story" class="hover:text-emerald-600">The Story</a>
-        <a href="#science" class="hover:text-emerald-600">Science</a>
-        <a href="#ingredients" class="hover:text-emerald-600">Ingredients</a>
-        <a href="#results" class="hover:text-emerald-600">Results</a>
-        <a href="#pricing" class="hover:text-emerald-600">Order Now</a>
-      </div>
+  <nav class="bg-white border-b sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-emerald-700">Joint Genesis™</h1>
       <button onclick="document.getElementById('pricing').scrollIntoView({behavior: 'smooth'})"
-              class="bg-emerald-700 text-white px-8 py-3.5 rounded-full font-semibold hover:bg-emerald-800 transition">
-        ORDER NOW
+              class="bg-emerald-700 text-white px-8 py-3 rounded-full font-medium">
+        Order Now
       </button>
     </div>
   </nav>
 
   <!-- Hero -->
-  <section class="hero-bg text-white min-h-screen flex items-center pt-20">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+  <section class="bg-emerald-50 py-20">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
       <div>
-        <div class="inline-flex bg-white/20 backdrop-blur-md text-white text-sm font-medium px-6 py-2 rounded-full mb-6">
-          Doctor Formulated • Clinically Studied
-        </div>
-        <h1 class="text-6xl md:text-7xl font-bold leading-tight mb-6">
-          Rediscover the Joy of<br><span class="text-yellow-300">Pain-Free Movement</span>
+        <h1 class="text-5xl font-bold leading-tight text-gray-900 mb-6">
+          Say Goodbye to Joint Pain & Stiffness
         </h1>
-        <p class="text-2xl md:text-3xl mb-8 text-emerald-100">
-          Joint Genesis™ helps restore youthful joint comfort using the power of Mobilee® and premium natural ingredients.
+        <p class="text-2xl text-gray-600 mb-8">
+          Joint Genesis™ helps restore natural joint lubrication and comfort using powerful, science-backed ingredients.
         </p>
         <button onclick="document.getElementById('pricing').scrollIntoView({behavior: 'smooth'})"
-                class="bg-white text-emerald-700 text-2xl font-bold px-12 py-6 rounded-3xl hover:scale-105 transition shadow-2xl">
-          Claim Your Discounted Supply →
+                class="bg-emerald-700 text-white text-xl font-semibold px-10 py-5 rounded-2xl w-full md:w-auto">
+          Get Your Supply Now
         </button>
-        <div class="flex items-center gap-8 mt-10 text-sm">
-          <div>✅ 180-Day Guarantee</div>
-          <div>✅ Made in USA</div>
-          <div>✅ Free Shipping on 6 Bottles</div>
-        </div>
+        <p class="mt-6 text-sm text-gray-500">✅ 180-Day Money Back Guarantee</p>
       </div>
       <div class="flex justify-center">
-        <img src="https://via.placeholder.com/480x520/10b981/ffffff?text=Joint+Genesis+Bottle" 
-             alt="Joint Genesis Bottle" class="bottle-float w-80 md:w-96 shadow-2xl rounded-3xl">
+        <img src="https://via.placeholder.com/420x520/10b981/ffffff?text=Joint+Genesis+Bottle" 
+             alt="Joint Genesis Bottle" class="bottle shadow-2xl rounded-3xl">
       </div>
     </div>
   </section>
 
-  <!-- As Seen On -->
-  <section class="py-8 bg-white">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <p class="text-gray-500 mb-6">AS FEATURED ON</p>
-      <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-6 text-3xl font-bold opacity-75">
-        <span>Yahoo!</span>
-        <span>AP</span>
-        <span>Bloomberg</span>
-        <span>MarketWatch</span>
-      </div>
+  <!-- Trust -->
+  <div class="bg-white py-6 border-b">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="text-gray-500 mb-4">Trusted by Thousands • Made in USA • FDA Registered Facility</p>
     </div>
-  </section>
+  </div>
 
-  <!-- Doctor + Story -->
-  <section id="story" class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-16 items-center">
-        <div>
-          <p class="text-emerald-600 font-semibold">From the Desk of Dr. Mark Weis, M.D.</p>
-          <h2 class="section-title font-bold text-gray-900 mt-4">The Japanese Village Where 90-Year-Olds Move Like 50-Year-Olds</h2>
-          <div class="prose text-lg text-gray-600 mt-8 leading-relaxed">
-            <p>In the remote village of Yuzurihara, Japan, elderly residents work in rice fields for 8+ hours a day — squatting, bending, and harvesting with ease.</p>
-            <p>The secret? A unique purple sweet potato rich in <strong>hyaluronan</strong> — the molecule that keeps joints lubricated and flexible.</p>
-          </div>
+  <!-- Problem / Pain Points -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-12">Does This Sound Like You?</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-3xl shadow-sm">
+          <img src="https://picsum.photos/id/1015/400/300" alt="Knee Pain" class="w-full h-48 object-cover rounded-2xl mb-6">
+          <p class="font-medium">Knee pain when walking or climbing stairs</p>
         </div>
-        <div>
-          <img src="https://via.placeholder.com/600x500/166534/ffffff?text=Japanese+Farmer+with+Cart" 
-               alt="Japanese Farmer" class="rounded-3xl shadow-2xl">
+        <div class="bg-white p-8 rounded-3xl shadow-sm">
+          <img src="https://picsum.photos/id/201/400/300" alt="Morning Stiffness" class="w-full h-48 object-cover rounded-2xl mb-6">
+          <p class="font-medium">Morning stiffness and difficulty getting up</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Science -->
-  <section id="science" class="py-24 bg-emerald-50">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <h2 class="section-title font-bold mb-12">Why Your Joints Hurt As You Age</h2>
-      <div class="max-w-4xl mx-auto">
-        <p class="text-2xl text-gray-700">As we age, hyaluronan levels in our synovial fluid drop dramatically. This causes joints to dry out, become stiff, and painful.</p>
-        <div class="my-16 bg-white p-10 rounded-3xl shadow-xl">
-          <p class="text-3xl font-semibold text-emerald-700">Joint Genesis™ with Mobilee® multiplies hyaluronan levels by up to 10x</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Ingredients -->
-  <section id="ingredients" class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="section-title font-bold text-center mb-16">The Powerful Joint Genesis™ Formula</h2>
-      <div class="grid md:grid-cols-2 gap-12">
-        <div class="space-y-10">
-          <div class="flex gap-6">
-            <div class="w-20 h-20 bg-emerald-100 rounded-2xl flex items-center justify-center text-4xl">🔬</div>
-            <div>
-              <h4 class="font-bold text-2xl">Mobilee®</h4>
-              <p class="text-gray-600">Patented ingredient clinically shown to increase hyaluronan levels by 10x</p>
-            </div>
-          </div>
-          <div class="flex gap-6">
-            <div class="w-20 h-20 bg-emerald-100 rounded-2xl flex items-center justify-center text-4xl">🌲</div>
-            <div>
-              <h4 class="font-bold text-2xl">French Maritime Pine Bark</h4>
-              <p class="text-gray-600">Powerful antioxidant that supports healthy inflammation response</p>
-            </div>
-          </div>
-        </div>
-        <div class="bg-emerald-700 text-white p-10 rounded-3xl">
-          <h3 class="text-2xl font-bold mb-6">Plus Synergistic Blend:</h3>
-          <ul class="space-y-4 text-lg">
-            <li class="flex items-center gap-3"><i class="fas fa-check"></i> Ginger Root</li>
-            <li class="flex items-center gap-3"><i class="fas fa-check"></i> Boswellia Serrata</li>
-            <li class="flex items-center gap-3"><i class="fas fa-check"></i> Glucosamine & Chondroitin</li>
-          </ul>
+        <div class="bg-white p-8 rounded-3xl shadow-sm">
+          <img src="https://picsum.photos/id/251/400/300" alt="Shoulder Pain" class="w-full h-48 object-cover rounded-2xl mb-6">
+          <p class="font-medium">Shoulder, hip or back discomfort</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Benefits -->
-  <section class="py-24 bg-gray-900 text-white">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <h2 class="section-title font-bold mb-16">Experience The Difference</h2>
-      <div class="grid md:grid-cols-3 gap-10">
-        <div class="bg-gray-800 p-10 rounded-3xl">
-          <div class="text-6xl mb-6">🦵</div>
-          <h3 class="text-2xl font-semibold">Flexible & Comfortable Joints</h3>
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-16">How Joint Genesis Helps You</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="text-center">
+          <img src="https://picsum.photos/id/180/300/300" alt="Lubricated Joints" class="mx-auto w-40 h-40 object-cover rounded-3xl mb-6">
+          <h3 class="font-semibold text-xl">Lubricates Joints</h3>
+          <p class="text-gray-600 mt-3">Restores natural synovial fluid for smooth movement</p>
         </div>
-        <div class="bg-gray-800 p-10 rounded-3xl">
-          <div class="text-6xl mb-6">🏃</div>
-          <h3 class="text-2xl font-semibold">Youthful Mobility</h3>
+        <div class="text-center">
+          <img src="https://picsum.photos/id/201/300/300" alt="Reduce Pain" class="mx-auto w-40 h-40 object-cover rounded-3xl mb-6">
+          <h3 class="font-semibold text-xl">Reduces Discomfort</h3>
+          <p class="text-gray-600 mt-3">Helps calm inflammation naturally</p>
         </div>
-        <div class="bg-gray-800 p-10 rounded-3xl">
-          <div class="text-6xl mb-6">😊</div>
-          <h3 class="text-2xl font-semibold">Active Life Again</h3>
+        <div class="text-center">
+          <img src="https://picsum.photos/id/251/300/300" alt="Better Mobility" class="mx-auto w-40 h-40 object-cover rounded-3xl mb-6">
+          <h3 class="font-semibold text-xl">Improves Mobility</h3>
+          <p class="text-gray-600 mt-3">Move freely and confidently again</p>
+        </div>
+        <div class="text-center">
+          <img src="https://picsum.photos/id/64/300/300" alt="Active Life" class="mx-auto w-40 h-40 object-cover rounded-3xl mb-6">
+          <h3 class="font-semibold text-xl">Active Lifestyle</h3>
+          <p class="text-gray-600 mt-3">Enjoy daily activities without pain</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Testimonials -->
-  <section id="results" class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="section-title font-bold text-center mb-16">Real People, Real Results</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-zinc-50 p-8 rounded-3xl">
-          <p class="italic">"I can play with my grandkids again without knee pain. This product changed my life!"</p>
-          <div class="mt-8 font-semibold">— Dave Sherman, Arizona</div>
+  <!-- Doctor Story -->
+  <section class="py-20 bg-emerald-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-emerald-700 font-medium">Discovered by Dr. Mark Weis, M.D.</p>
+          <h2 class="text-4xl font-bold mt-4 mb-6">The Japanese Village Secret</h2>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            In Yuzurihara, Japan, people in their 80s and 90s stay active and flexible. Scientists discovered their secret is high levels of <strong>hyaluronan</strong> from their diet.
+          </p>
+          <p class="mt-6 text-lg text-gray-600">
+            Joint Genesis™ brings that same science to you with Mobilee® — shown to multiply hyaluronan levels.
+          </p>
         </div>
-        <div class="bg-zinc-50 p-8 rounded-3xl">
-          <p class="italic">"After 3 weeks my stiffness is gone. I feel 15 years younger."</p>
-          <div class="mt-8 font-semibold">— Ramesh Kumar, Delhi</div>
+        <img src="https://picsum.photos/id/1016/600/450" alt="Japanese Village" class="rounded-3xl shadow-xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials with Images -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-16">Real Results From Real People</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- Testimonial 1 -->
+        <div class="bg-gray-50 p-8 rounded-3xl">
+          <img src="https://picsum.photos/id/64/400/300" alt="Dave Sherman" class="w-full h-56 object-cover rounded-2xl mb-6">
+          <p class="italic text-gray-700">"After using Joint Genesis for a month, my knee pain is almost gone. I can walk and play with my grandkids again!"</p>
+          <div class="mt-6 flex items-center gap-3">
+            <div class="font-semibold">Dave Sherman</div>
+            <div class="text-emerald-600">★★★★★</div>
+          </div>
+          <p class="text-sm text-gray-500">Arizona, USA</p>
         </div>
-        <div class="bg-zinc-50 p-8 rounded-3xl">
-          <p class="italic">"Best joint supplement I've ever tried. Highly recommended!"</p>
-          <div class="mt-8 font-semibold">— Sunita Sharma, Mumbai</div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-gray-50 p-8 rounded-3xl">
+          <img src="https://picsum.photos/id/201/400/300" alt="Ramesh Kumar" class="w-full h-56 object-cover rounded-2xl mb-6">
+          <p class="italic text-gray-700">"My morning stiffness has reduced a lot. I feel much more mobile now. Thank you!"</p>
+          <div class="mt-6 flex items-center gap-3">
+            <div class="font-semibold">Ramesh Kumar</div>
+            <div class="text-emerald-600">★★★★★</div>
+          </div>
+          <p class="text-sm text-gray-500">Delhi, India</p>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-gray-50 p-8 rounded-3xl">
+          <img src="https://picsum.photos/id/251/400/300" alt="Sunita Sharma" class="w-full h-56 object-cover rounded-2xl mb-6">
+          <p class="italic text-gray-700">"This is the best joint supplement I have tried. My shoulder pain is much better."</p>
+          <div class="mt-6 flex items-center gap-3">
+            <div class="font-semibold">Sunita Sharma</div>
+            <div class="text-emerald-600">★★★★★</div>
+          </div>
+          <p class="text-sm text-gray-500">Mumbai, India</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Pricing -->
-  <section id="pricing" class="py-24 bg-emerald-50">
-    <div class="max-w-7xl mx-auto px-6">
-      <h2 class="section-title font-bold text-center mb-4">Choose Your Package</h2>
-      <p class="text-center text-2xl text-emerald-700 mb-16">Special Introductory Pricing • Limited Time</p>
+  <section id="pricing" class="py-20 bg-emerald-50">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-4">Choose Your Package</h2>
+      <p class="text-xl text-gray-600 mb-12">Special Discounted Prices – Limited Time Offer</p>
 
-      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         <!-- 2 Bottles -->
-        <div class="bg-white rounded-3xl p-10 shadow-xl">
-          <h3 class="text-xl font-bold text-center">2 BOTTLES</h3>
-          <p class="text-center text-gray-500">60-Day Supply</p>
-          <p class="text-6xl font-bold text-center my-8">$69 <span class="text-base font-normal">/bottle</span></p>
-          <button onclick="alert('Redirecting to ClickBank... (Demo)')" 
-                  class="w-full py-5 bg-yellow-400 hover:bg-yellow-500 font-bold rounded-2xl text-xl">ADD TO CART</button>
+        <div class="bg-white p-8 rounded-3xl shadow">
+          <h3 class="font-bold text-xl">2 Bottles</h3>
+          <p class="text-gray-500">60 Days Supply</p>
+          <p class="text-5xl font-bold my-6">$69 <span class="text-base font-normal text-gray-500">/bottle</span></p>
+          <button onclick="alert('Going to ClickBank Checkout (Demo)')" 
+                  class="w-full bg-emerald-700 text-white py-5 rounded-2xl font-medium">Buy Now</button>
         </div>
 
-        <!-- 6 Bottles - BEST -->
-        <div class="bg-white rounded-3xl p-10 shadow-2xl border-4 border-emerald-600 relative scale-105">
-          <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-red-600 text-white px-10 py-2 rounded-full font-bold">BEST VALUE + FREE BONUSES</div>
-          <h3 class="text-xl font-bold text-center text-emerald-700">6 BOTTLES</h3>
-          <p class="text-center text-emerald-600">180-Day Supply</p>
-          <p class="text-6xl font-bold text-center my-8 text-emerald-700">$39 <span class="text-base font-normal">/bottle</span></p>
-          <button onclick="alert('Redirecting to ClickBank... (Demo)')" 
-                  class="w-full py-5 bg-emerald-700 hover:bg-emerald-800 text-white font-bold rounded-2xl text-xl">GET 6 BOTTLES - SAVE $180</button>
+        <!-- 6 Bottles Best -->
+        <div class="bg-white p-8 rounded-3xl shadow-xl border-2 border-emerald-600 relative">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-emerald-700 text-white px-6 py-1 rounded-full text-sm font-bold">BEST VALUE</div>
+          <h3 class="font-bold text-xl text-emerald-700">6 Bottles</h3>
+          <p class="text-emerald-600">180 Days Supply + 2 Free Bonuses</p>
+          <p class="text-5xl font-bold my-6 text-emerald-700">$39 <span class="text-base font-normal">/bottle</span></p>
+          <button onclick="alert('Going to ClickBank Checkout (Demo)')" 
+                  class="w-full bg-emerald-700 text-white py-5 rounded-2xl font-medium">Buy Now - Save $180</button>
         </div>
 
         <!-- 3 Bottles -->
-        <div class="bg-white rounded-3xl p-10 shadow-xl">
-          <h3 class="text-xl font-bold text-center">3 BOTTLES</h3>
-          <p class="text-center text-gray-500">90-Day Supply + Bonuses</p>
-          <p class="text-6xl font-bold text-center my-8">$59 <span class="text-base font-normal">/bottle</span></p>
-          <button onclick="alert('Redirecting to ClickBank... (Demo)')" 
-                  class="w-full py-5 bg-yellow-400 hover:bg-yellow-500 font-bold rounded-2xl text-xl">ADD TO CART</button>
+        <div class="bg-white p-8 rounded-3xl shadow">
+          <h3 class="font-bold text-xl">3 Bottles</h3>
+          <p class="text-gray-500">90 Days Supply</p>
+          <p class="text-5xl font-bold my-6">$59 <span class="text-base font-normal text-gray-500">/bottle</span></p>
+          <button onclick="alert('Going to ClickBank Checkout (Demo)')" 
+                  class="w-full bg-emerald-700 text-white py-5 rounded-2xl font-medium">Buy Now</button>
         </div>
       </div>
 
-      <div class="text-center mt-12 text-emerald-700 font-medium text-lg">
-        180-Day Money Back Guarantee • No Questions Asked
-      </div>
+      <p class="mt-12 text-emerald-700 font-medium">180-Day Satisfaction Guarantee • Secure Checkout</p>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="py-24 bg-white">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="section-title font-bold text-center mb-16">Frequently Asked Questions</h2>
-      <div class="space-y-6">
-        <details class="bg-zinc-50 p-8 rounded-3xl">
-          <summary class="font-semibold text-xl cursor-pointer">How soon will I notice results?</summary>
-          <p class="mt-6 text-gray-600">Most customers feel noticeable improvement within 2–4 weeks. Best results come after 60–90 days.</p>
-        </details>
-        <details class="bg-zinc-50 p-8 rounded-3xl">
-          <summary class="font-semibold text-xl cursor-pointer">Is Joint Genesis safe?</summary>
-          <p class="mt-6 text-gray-600">Yes. Manufactured in FDA-registered facilities with natural, high-quality ingredients.</p>
-        </details>
-        <details class="bg-zinc-50 p-8 rounded-3xl">
-          <summary class="font-semibold text-xl cursor-pointer">What if it doesn't work for me?</summary>
-          <p class="mt-6 text-gray-600">You’re fully protected by our 180-day empty bottle guarantee.</p>
-        </details>
-      </div>
+  <section class="py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+      <details class="mb-6 bg-gray-50 p-6 rounded-2xl">
+        <summary class="font-medium cursor-pointer">How long does it take to see results?</summary>
+        <p class="mt-4 text-gray-600">Most people notice improvement in 2-4 weeks. Full benefits appear after 60-90 days.</p>
+      </details>
+      <details class="mb-6 bg-gray-50 p-6 rounded-2xl">
+        <summary class="font-medium cursor-pointer">Is it safe?</summary>
+        <p class="mt-4 text-gray-600">Yes. Natural ingredients, manufactured in FDA-registered facilities.</p>
+      </details>
+      <details class="bg-gray-50 p-6 rounded-2xl">
+        <summary class="font-medium cursor-pointer">What if I'm not satisfied?</summary>
+        <p class="mt-4 text-gray-600">You have 180 days to try it risk-free. Full refund if not satisfied.</p>
+      </details>
     </div>
   </section>
 
   <!-- Final CTA -->
-  <section class="py-28 bg-gradient-to-br from-emerald-700 to-teal-700 text-white text-center">
-    <div class="max-w-3xl mx-auto px-6">
-      <h2 class="text-5xl font-bold mb-6">Ready to Move Freely Again?</h2>
-      <p class="text-2xl mb-10">Join thousands who are enjoying pain-free, flexible joints with Joint Genesis™</p>
+  <section class="py-20 bg-emerald-700 text-white text-center">
+    <div class="max-w-2xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6">Ready to Move Without Pain Again?</h2>
       <button onclick="document.getElementById('pricing').scrollIntoView({behavior: 'smooth'})"
-              class="bg-white text-emerald-700 text-3xl font-bold px-16 py-8 rounded-3xl hover:scale-110 transition">
-        YES! I Want My Joints Back
+              class="bg-white text-emerald-700 text-2xl font-bold px-16 py-6 rounded-3xl hover:bg-gray-100">
+        Yes, I Want Relief Now
       </button>
     </div>
   </section>
 
   <footer class="bg-gray-900 text-gray-400 py-12 text-center">
-    <p>© 2026 Biodynamix • Joint Genesis™ • All Rights Reserved</p>
-    <p class="text-xs mt-4">Demo Landing Page • Replace button links with your ClickBank hoplink</p>
+    <p>© 2026 Joint Genesis by Biodynamix</p>
+    <p class="text-xs mt-3">This is a demo page. Replace images and links with your real ClickBank offer.</p>
   </footer>
 
 </body>
